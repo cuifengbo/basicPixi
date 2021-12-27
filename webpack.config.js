@@ -6,7 +6,9 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'main.js',
+        clean: true,
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: 'images/[hash][ext][query]'
     },
     devServer: {
         static: './dist',
@@ -19,7 +21,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.png/,
+                test: /.(png|svg|jpg|jpeg|gif)/,
                 type: 'asset/resource'
             }
         ]
