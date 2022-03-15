@@ -1,0 +1,27 @@
+{
+    "baseUrl": ".",
+    "paths": {
+        "@/*": [
+            "/src/*"
+        ]
+    },
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "allowJs": true,
+        "module": "commonjs",
+        "target": "es5"
+    },
+    "include": [
+        "src/modules/index.d.ts",
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./node_modules",
+        "**/*.spec.ts"
+    ]
+   
+}
